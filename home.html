@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NSS</title>
+	<link rel="icon"  href="1.png">
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Vollkorn&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Crete+Round|Volkhov&display=swap" rel="stylesheet">
+<style type="text/css">
+
+  body{
+    background-color: #eee;
+  }
+.active{
+	background-color: red;	
+}
+/*For navbar Contents*/
+	@media screen and  (max-width: 768px) {
+      .ex1{
+        font-size: 20px;
+      }
+      }
+      @media screen and (min-width:768px ) and  (max-width: 992px) {
+        .ex1{
+        font-size: 10px;
+      }
+      }
+      @media screen and (min-width:992px ) and (max-width: 1200px) {
+        .ex1{
+        font-size: 14px;
+      }
+      
+      }
+      @media screen and (min-width:1200px )  {
+        .ex1{
+        font-size: 18px;
+      }
+    }
+/*For navbar Header*/
+    	@media screen and  (max-width: 768px) {
+      .ex2{
+        font-size: 20px;
+      }
+      }
+      @media screen and (min-width:768px ) and  (max-width: 992px) {
+        .ex2{
+        font-size: 30px;
+      }
+      }
+      @media screen and (min-width:992px ) and (max-width: 1200px) {
+        .ex2{
+        font-size: 32px;
+      }
+      
+      }
+      @media screen and (min-width:1200px )  {
+        .ex2{
+        font-size: 35px;
+      }
+    }
+    /*For SVCE and Nss font*/
+    	@media screen and  (max-width: 768px) {
+      .ex3{
+        font-size: 20px;
+      }
+      }
+      @media screen and (min-width:768px ) and  (max-width: 992px) {
+        .ex3{
+        font-size: 18px;
+      }
+      }
+      @media screen and (min-width:992px ) and (max-width: 1200px) {
+        .ex3{
+        font-size: 20px;
+      }
+      
+      }
+      @media screen and (min-width:1200px )  {
+        .ex3{
+        font-size: 22px;
+      }
+    }
+
+
+    /*nss*/
+    	@media screen and  (max-width: 768px) {
+      .ex4{
+        font-size: 20px;
+      }
+      }
+      @media screen and (min-width:768px ) and  (max-width: 992px) {
+        .ex4{
+        font-size: 13px;
+      }
+      }
+      @media screen and (min-width:992px ) and (max-width: 1200px) {
+        .ex4{
+        font-size: 18px;
+      }
+      
+      }
+      @media screen and (min-width:1200px )  {
+        .ex4{
+        font-size: 24px;
+      }
+    }
+
+/*NOT ME BUT U*/
+      @media screen and  (max-width: 768px) {
+      .ex5{
+        font-size: 18px;
+      }
+      }
+      @media screen and (min-width:768px ) and  (max-width: 992px) {
+        .ex5{
+        font-size: 26px;
+      }
+      }
+      @media screen and (min-width:992px ) and (max-width: 1200px) {
+        .ex5{
+        font-size: 28px;
+      }
+      
+      }
+      @media screen and (min-width:1200px )  {
+        .ex5{
+        font-size: 30px;
+      }
+    }
+
+/*For images*/
+        	@media screen and  (max-width: 768px) {
+      .i1{
+        width:70px;height:70px;
+      }
+      }
+      @media screen and (min-width:768px ) and  (max-width: 992px) {
+        .i1{
+        width:100px;height:100px;
+      }
+      }
+      @media screen and (min-width:992px ) and (max-width: 1200px) {
+        .i1{
+        width:130px;height:130px;
+      }
+      
+      }
+      @media screen and (min-width:1200px )  {
+        .i1{
+        width:150px;height:150px;
+      }
+    }
+
+/*navbar hover effect*/
+    nav.shift ul li a {
+  position:relative;
+  z-index: 1;
+}
+nav.shift ul li a:hover {
+  color: #91640F;
+}
+nav.shift ul li a:after {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  width: 100%;
+  height: 1px;
+  content: '.';
+  color: transparent;
+  background: red;
+  visibility: none;
+  opacity: 0;
+  z-index: -1;
+}
+nav.shift ul li a:hover:after {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+
+
+
+/* Keyframes */
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #333;
+  }
+}
+
+/* Keyframes */
+@-webkit-keyframes circle {
+  0% {
+    width: 1px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    height: 1px;
+    z-index: -1;
+    background: #eee;
+    border-radius: 100%;
+  }
+  100% {
+    background: #aaa;
+    height: 5000%;
+    width: 5000%;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    border-radius: 0;
+  }
+}
+
+</style>
+  </head>
+<body>
+<div class="container-fluid visible-xs" style="background-color:Lightsteelblue;" >
+	<div class="row" align="center">
+		<strong class="ex3" class="font-family: 'Crete Round', serif;"> SRI VENKATESWARA COLLEGE OF ENGINEERING,Sriperumbudur.</strong>
+	</div>
+	<div class="row">
+		<div class="col-xs-3"  >
+	     <img src="s.png"  class="img-responsive i1">
+			
+		</div>
+
+		<div class="col-xs-6" align="center">
+			<b  style="color:red;font-family: 'Libre Baskerville', serif; font-size: 10px;"><br>NATIONAL SERVICE SCHEME</b><br>
+		  <b class="ex5" style="font-family: 'Libre Baskerville', serif;font-size: 8px;"> NOT ME BUT YOU</b>
+    </div>
+
+		<div class="col-xs-3" >
+	     <img src="1.png"  class="img-responsive i1">			
+		</div>
+	</div>
+</div>
+
+		<div class="container-fluid visible-lg visible-md visible-sm" style="background-color:Lightsteelblue;padding-top: 10px;padding-bottom: 10px;">
+  			<div class="row">
+ 
+ 	 		  <div class="col-sm-2" align="center">
+     			<img src="s.png"  class="img-responsive i1">
+    			</div>
+	 			<div class="col-sm-8" align="center"><br>
+      				<span class="ex3" style=""><strong>SRI VENKATESWARA COLLEGE OF ENGINEERING,Sriperumbudur-602 117.</strong>
+					</span>
+	  				<b class="ex2" style="color:red;font-family: 'Libre Baskerville', serif;"><br>NATIONAL SERVICE SCHEME</b><br>
+            <b class="ex5" style="font-family: 'Libre Baskerville', serif;"> NOT ME BUT YOU</b>
+    			</div>
+    			<div class="col-sm-2" align="center">
+       				<img src="1.png" class="img-responsive i1">
+    			</div>
+  
+  			</div>
+		</div>
+<section style="background: #f1c40f;">
+<nav class="navbar navbar-default shift" style="background-color: #303983;">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand " href="#" style="font-family: 'Libre Baskerville', serif; color: white; " ><strong class="ex4">NSS </strong></a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right ex1" style=" font-family: 'Vollkorn', serif;color: white; ">
+        <li><a href="home.html" class="active" style="color: white;" ><strong>HOME</strong><span class="sr-only">(current)</span></a></li>
+        <li><a href="vision.html" style="color: white;" ><strong>VISION</strong></a></li>
+        <li><a href="activities.html" style="color: white;" ><strong>ACTIVITIES</strong></a></li>
+        <li><a href="faculty.html" style="color: white;" ><strong>FACULTY</strong></a></li>
+        <li><a href="programmes.html" style="color: white;" ><strong>PROGRAMMES</strong></a></li>
+        <li><a href="archives.html" style="color: white;" ><strong>ARCHIVES</strong></a></li>
+        <li><a href="downloads.html" style="color: white;" ><strong>DOWNLOADS</strong></a></li>
+        
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+</section>
+<div class="container-fluid hidden-xs">
+
+<div class="row">
+	<div class="col-sm-8"  >
+
+        
+    <div id="myCarousel" class="carousel slide" data-ride="carousel" role="listbox">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+      </ol>
+
+      <!-- Wrapper for slides_lg -->
+      <div class="carousel-inner ">
+
+        <div class="item active">
+          <img src="s1.jpg" alt="img1" style="width:100%; height: 30vw;"> 
+        </div>
+
+        <div class="item">
+          <img src="s4.jpg" alt="img2" style="width:100%; height: 30vw;">  
+        </div>
+    
+        <div class="item">
+          <img src="s2.png" alt="img3" style="width:100%; height: 30vw;">          
+        </div>
+
+        <div class="item ">
+          <img src="s3.png" alt="img4" style="width:100%; height: 30vw;">
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+	<div class="col-sm-4">
+    <h4><strong>NEWS UPDATES</strong></h4>
+      <marquee behavior ="scroll" direction ="up" scrollamount="2" style="font-size: 1.3vw;" ><br><br>Text Here!!<br>Test Here!!<br>Text Here!!<br></marquee>
+        <br>
+    </div>
+</div></div>
+<!--mobile View -->
+<div class="container-fluid visible-xs" >
+	<div class="row">
+		<div id="myCarousel" class="carousel slide" data-ride="carousel" role="listbox">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <li data-target="#myCarousel" data-slide-to="3"></li>
+      
+    </ol>
+
+    <!-- Wrapper for slides_lg -->
+    <div class="carousel-inner ">
+
+      <div class="item active">
+        <img src="s1.jpg" alt="img1" style="width:100%; height: 100%;">
+        
+      </div>
+
+      <div class="item">
+        <img src="s4.jpg" alt="img2" style="width:100%; height: 100%;">
+        
+      </div>
+    
+      <div class="item">
+        <img src="s2.png" alt="img3" style="width:100%; height: 100%;">
+        
+      </div>
+
+      <div class="item ">
+        <img src="s3.png" alt="img4" style="width:100%; height: 100%;">
+        
+      </div>
+
+
+	</div>
+
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+
+</div></div><br>
+
+	<div class="row">
+		<h4><strong>NEWS UPDATES</strong></h4>
+			<marquee behavior ="scroll" direction ="up" scrollamount="2" style="font-size: 2.5vw;" >Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br><br> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<br><br> It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</marquee>
+				<br>
+	</div>
+	
+</div>
+
+</body></html>
